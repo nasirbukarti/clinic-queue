@@ -44,7 +44,7 @@ while True:
         print(f"\nTotal patients seen today: {total_seen}")
 
     elif choice == '5':
-        print("Closing Clinic Manager. Goodbye!")
+        print("system logout successfully. Goodbye!")
         break
     else:
         print("Invalid choice, please try again.")
