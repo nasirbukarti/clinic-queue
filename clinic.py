@@ -17,7 +17,7 @@ def show_menu():
 while True:
     show_menu()
     choice = input("Select an option (1-5): ")
-
+# handling user menu selection
     if choice == '1':
         name = input("Amina Sani Shuibu: ")
         print("Processing registration...")
