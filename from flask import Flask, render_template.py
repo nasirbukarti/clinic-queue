@@ -4,31 +4,29 @@ from models import Patient
 app = Flask(__name__)
 
 queue = []
-total_seen = 0
+served_count = 0
 
 @app.route('/')
 def index():
-    return render_template('index.html', queue=queue, total_seen=total_seen)
+    return render_template('index.html', queue=queue, count=served_count)
 
 @app.route('/add', methods=['GET', 'POST'])
 def add_patient():
     if request.method == 'POST':
         name = request.form['name']
         if name:
-            # This creates a Patient object using the Class from models.py
-            new_patient = Patient(name) 
-            # This adds the full object (name + timestamp) to your queue
-            queue.append(new_patient)
-
+            patient = Patient(name)
+            queue.append(patient)
         return redirect(url_for('index'))
     return render_template('add_patient.html')
 
 @app.route('/serve')
 def serve_patient():
-    global total_seen
-    if len(queue) > 0:
-        queue.pop(0)  # This is the FIFO (First In, First Out) logic!
-        total_seen += 1
+    global served_count
+    if queue:
+        queue.pop(0)  # FIFO
+        served_count += 1
     return redirect(url_for('index'))
+
 if __name__ == '__main__':
     app.run(debug=True)

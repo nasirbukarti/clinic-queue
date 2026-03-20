@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinic Queue System</title>
+</head>
+<body>
+    <h1>🏥 City Hospital Waiting List</h1>
+    
+    <h3>Current Queue:</h3>
+    <ul>
+        {% for patient in queue %}
+            <li>{{ patient.get_details() }}</li>
+        {% else %}
+            <li>The waiting list is currently empty.</li>
+        {% endfor %}
+    </ul>
+
+    <hr>
+    <p>Total patients seen today: <strong>{{ total_seen }}</strong></p>
+    
+    <a href="/add">
+        <button type="button">Register New Patient</button>
+    </a>
+    <hr>
+    <a href="/serve">
+        <button type="button" style="background-color: #ff4d4d; color: white;">Serve Next Patient (Remove First)</button>
+    </a>
+</body>
+</html>
