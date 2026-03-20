@@ -34,7 +34,7 @@ while True:
 
     elif choice == '3':
         if not queue:
-            print("No patients in the queue.")
+            print("Notice: the waiting room is currently empty.")
         else:
             removed = queue.pop(0) # Removes the FIRST person (FIFO)
             total_seen += 1
