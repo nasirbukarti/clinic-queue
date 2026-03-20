@@ -7,7 +7,7 @@ def show_menu():
     print("1. Register Patient (Add to Queue)")
     print("2. View Waiting List")
     print("3. See Next Patient (Remove from Queue)")
-    print("4. View Total Patients Seen Today")
+    print("4. view Daily Tally")
     print("5. Exit")
 
 while True:
