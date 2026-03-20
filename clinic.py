@@ -7,7 +7,7 @@ print("=" * 35)
 def show_menu():
     print("\n--- City Hospital Patient Portal ---")
     print("1. Register Patient (Add to Queue)")
-    print("2. View Waiting List")
+    print("No patients are currently waiting in the lobby")
     print("3. See Next Patient (Remove from Queue)")
     print("4. view Daily Tally")
     print("5. Exit")
