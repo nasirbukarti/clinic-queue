@@ -3,7 +3,7 @@ queue = []
 total_seen = 0
 
 def show_menu():
-    print("\n--- Health-Clinic Queue Manager ---")
+    print("\n--- City Hospital Patient Portal ---")
     print("1. Register Patient (Add to Queue)")
     print("2. View Waiting List")
     print("3. See Next Patient (Remove from Queue)")
