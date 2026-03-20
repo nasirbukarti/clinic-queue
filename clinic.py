@@ -48,4 +48,4 @@ while True:
         break
     else:
         print("Invalid choice, please try again.")
-        
+        #End of Clinic queue manager script
