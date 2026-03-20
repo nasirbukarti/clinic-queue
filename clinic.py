@@ -1,4 +1,4 @@
-# Clinic Queue Manager
+# city hospital system
 queue = []
 total_seen = 0
 
