@@ -1,4 +1,5 @@
 # city hospital system
+#list to Store patient names in order of arrival
 queue = []
 total_seen = 0
 
