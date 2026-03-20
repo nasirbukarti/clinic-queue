@@ -36,7 +36,7 @@ while True:
         if not queue:
             print("Notice: the waiting room is currently empty.")
         else:
-            removed = queue.pop(0) # Removes the FIRST person (FIFO)
+            removed = queue.pop(0) # Removes the first person based on arrival time (FIFO).
             total_seen += 1
             print(f"--[Action]:please bring {removed} to the consultation room.")
 
