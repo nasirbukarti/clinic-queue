@@ -41,7 +41,7 @@ while True:
             print(f"--[Action]:please bring {removed} to the consultation room.")
 
     elif choice == '4':
-        print(f"Total patients seen today: {total_seen}")
+        print(f"\nTotal patients seen today: {total_seen}")
 
     elif choice == '5':
         print("Closing Clinic Manager. Goodbye!")
