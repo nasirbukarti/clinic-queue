@@ -37,7 +37,7 @@ while True:
         else:
             removed = queue.pop(0) # Removes the FIRST person (FIFO)
             total_seen += 1
-            print(f"Now seeing: {removed}")
+            print(f"--[Action]:please bring {removed} to the consultation room.")
 
     elif choice == '4':
         print(f"Total patients seen today: {total_seen}")
