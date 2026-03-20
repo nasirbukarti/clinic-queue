@@ -48,5 +48,5 @@ while True:
         print("system logout successfully. Goodbye!")
         break
     else:
-        print("Invalid choice, please try again.")
+        print("selection not recognized. please choose 1-5.")
         #End of Clinic queue manager script
