@@ -1,6 +1,7 @@
 # city hospital system
 #list to Store patient names in order of arrival
 queue = []
+#Tracks total patients processed during the shift
 total_seen = 0
 
 print("=" * 35)
