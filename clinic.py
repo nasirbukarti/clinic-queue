@@ -15,7 +15,7 @@ while True:
     choice = input("Select an option (1-5): ")
 
     if choice == '1':
-        name = input("Enter patient name: ")
+        name = input("Amina Sani Shuibu: ")
         queue.append(name) # Adds to the end (FIFO)
         print(f"Patient {name} registered.")
 
