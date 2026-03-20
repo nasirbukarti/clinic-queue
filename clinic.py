@@ -1,3 +1,4 @@
+#(C) 2026 Nasir Maina Bukarti clinic systems.
 # city hospital system
 #list to Store patient names in order of arrival
 queue = []
