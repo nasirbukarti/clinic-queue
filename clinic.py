@@ -5,6 +5,7 @@ queue = []
 total_seen = 0
 
 print("=" * 35)
+print("*"*40)
 def show_menu():
     print("\n--- City Hospital Patient Portal ---")
     print("1. Register Patient (Add to Queue)")
